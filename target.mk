@@ -54,7 +54,7 @@ Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c \
 
 # Include all the source files in the following directories
 SRC_DIRS = \
-Core/Src \
+Core \
 Middlewares/Third_Party/FreeRTOS/Source \
 Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 \
 Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F
@@ -62,7 +62,6 @@ Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F
 # Define additional include directories
 
 C_INCLUDES =  \
--ICore/Inc \
 -I/home/vikram/STM32Cube/Repository/STM32Cube_FW_F4_V1.25.2/Drivers/STM32F4xx_HAL_Driver/Inc \
 -I/home/vikram/STM32Cube/Repository/STM32Cube_FW_F4_V1.25.2/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy \
 -I/home/vikram/STM32Cube/Repository/STM32Cube_FW_F4_V1.25.2/Middlewares/Third_Party/FreeRTOS/Source/include \
