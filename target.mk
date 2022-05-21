@@ -35,26 +35,26 @@ AS_INCLUDES =  \
 # Specific files to include if you don't want the entire directory including
 SRC_FILES = \
 startup_stm32f407xx.s \
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c \
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c \
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c \
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c \
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c \
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c \
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c \
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c \
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c \
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c \
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c \
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c \
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c \
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c \
-Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c \
+drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c \
+drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c \
+drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c \
+drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c \
+drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c \
+drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c \
+drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c \
+drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c \
+drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c \
+drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c \
+drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c \
+drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c \
+drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c \
+drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c \
+drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c \
 Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c \
 
 # Include all the source files in the following directories
 SRC_DIRS = \
-Core \
+core \
 Middlewares/Third_Party/FreeRTOS/Source \
 Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 \
 Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F
@@ -62,13 +62,13 @@ Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F
 # Define additional include directories
 
 C_INCLUDES =  \
--I/home/vikram/STM32Cube/Repository/STM32Cube_FW_F4_V1.25.2/Drivers/STM32F4xx_HAL_Driver/Inc \
--I/home/vikram/STM32Cube/Repository/STM32Cube_FW_F4_V1.25.2/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy \
--I/home/vikram/STM32Cube/Repository/STM32Cube_FW_F4_V1.25.2/Middlewares/Third_Party/FreeRTOS/Source/include \
--I/home/vikram/STM32Cube/Repository/STM32Cube_FW_F4_V1.25.2/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 \
--I/home/vikram/STM32Cube/Repository/STM32Cube_FW_F4_V1.25.2/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F \
--I/home/vikram/STM32Cube/Repository/STM32Cube_FW_F4_V1.25.2/Drivers/CMSIS/Device/ST/STM32F4xx/Include \
--I/home/vikram/STM32Cube/Repository/STM32Cube_FW_F4_V1.25.2/Drivers/CMSIS/Include
+-Idrivers/STM32F4xx_HAL_Driver/Inc \
+-Idrivers/STM32F4xx_HAL_DriverInc/Legacy \
+-IMiddlewares/Third_Party/FreeRTOS/Source/include \
+-IMiddlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 \
+-IMiddlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F \
+-Idrivers/CMSIS/Device/ST/STM32F4xx/Include \
+-Idrivers/CMSIS/Include
 
 # compile gcc flags
 ASFLAGS = $(MCU) $(AS_DEFS) $(AS_INCLUDES) $(OPT) -Wall -fdata-sections -ffunction-sections
