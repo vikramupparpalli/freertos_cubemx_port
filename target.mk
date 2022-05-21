@@ -50,23 +50,23 @@ drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c \
 drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c \
 drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c \
 drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c \
-Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c \
+os/portable/MemMang/heap_4.c \
 
 # Include all the source files in the following directories
 SRC_DIRS = \
 core \
-Middlewares/Third_Party/FreeRTOS/Source \
-Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 \
-Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F
+os \
+os/CMSIS_RTOS_V2 \
+os/portable/GCC/ARM_CM4F
 
 # Define additional include directories
 
 C_INCLUDES =  \
 -Idrivers/STM32F4xx_HAL_Driver/Inc \
 -Idrivers/STM32F4xx_HAL_DriverInc/Legacy \
--IMiddlewares/Third_Party/FreeRTOS/Source/include \
--IMiddlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 \
--IMiddlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F \
+-Ios/include \
+-Ios/CMSIS_RTOS_V2 \
+-Ios/portable/GCC/ARM_CM4F \
 -Idrivers/CMSIS/Device/ST/STM32F4xx/Include \
 -Idrivers/CMSIS/Include
 
